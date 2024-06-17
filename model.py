@@ -11,8 +11,7 @@ import keras
 
 def main():
     selected_box = st.sidebar.selectbox(
-        ('Denoise Image')
-        )
+        ('Denoise Image'))
                 
     if selected_box == 'Denoise Image':
         models()
