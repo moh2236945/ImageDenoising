@@ -11,7 +11,12 @@ import keras
 
 def main():
     selected_box = st.sidebar.selectbox(
-        ('Denoise Image'))
+        'Choose an option..',
+        ('About the App','Denoise Image')
+        )
+    if selected_box == 'About the App':
+        readme=Image.open('readme_app.PNG')
+        st.image(readme)
                 
     if selected_box == 'Denoise Image':
         models()
